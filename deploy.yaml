@@ -4,10 +4,15 @@ metadata:
   name: helloworld
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: helloworld
+      ci: true
   template:
     metadata:
       labels:
         app: helloworld
+        ci: true
     spec:
       containers:
       - name: helloworld
