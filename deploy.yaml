@@ -7,12 +7,12 @@ spec:
   selector:
     matchLabels:
       app: helloworld
-      ci: true
+      ci: jenkins
   template:
     metadata:
       labels:
         app: helloworld
-        ci: true
+        ci: jenkins
     spec:
       containers:
       - name: helloworld
