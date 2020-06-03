@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloworld
@@ -11,4 +11,4 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: registry.harbor:5000/default/helloworld
+        image: registry.harbor:5000/library/helloworld
